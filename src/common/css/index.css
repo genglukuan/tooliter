@@ -2,8 +2,12 @@ body{
 
 }
 
-
-
+.headButton{
+    padding-left: 950px;
+}
+.headButton button{
+    margin: 10px;
+}
 .head{
     background-color: silver;
     width: 100%;
