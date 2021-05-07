@@ -5625,3 +5625,8 @@ button.list-group-item-danger.active:focus {
     display: none !important;
   }
 }
+.form-control-inline{
+  width:40% !important;
+  display:inline !important;
+}
+

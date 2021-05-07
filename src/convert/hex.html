@@ -1,64 +1,70 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <header>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <link rel="stylesheet" type="text/css" href="../common/css/index.css">
-    <link rel="stylesheet" type="text/css" href="../../assets/bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../../assets/bootstrap/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/bootstrap/css/bootstrap-theme.css"/>
+    <script src="../../assets/jquery/jquery-3.6.0.js"></script>
+    <script src="../common/js/index.js"></script>
 </header>
 <body>
 <div class="head">
     <div class="icons"></div>
     <div class="btn-group headButton" role="group">
-        <button class="btn btn-success">login in</button>
-        <button class="btn btn-success">sign up</button>
+        <button class="btn btn-success">sign in</button>
+        <button class="btn btn-success margin-10">sign up</button>
     </div>
 </div>
 
-<div class="container">
-    <div>
-        <input type="radio" name="hex" class="radio-inline">2进制</input>
-        <input type="radio" name="hex" class="radio-inline">8进制</input>
-        <input type="radio" name="hex" checked class="radio-inline">10进制</input>
-        <input type="radio" name="hex" class="radio-inline">16进制</input>
-        <input type="radio" name="hex" class="radio-inline">32进制</input>
+<div class="container-fluid">
+    <div style="width:100%;height:100px;"></div>
+    <div class="form-inline">
+        <input type="radio" name="hex" class="input-group-lg margin-20">2进制</input>
+        <input type="radio" name="hex" class="input-group-lg margin-20">8进制</input>
+        <input type="radio" name="hex" checked class="input-group-lg margin-20">10进制</input>
+        <input type="radio" name="hex" class="input-group-lg margin-20">16进制</input>
+        <input type="radio" name="hex" class="input-group-lg margin-20">32进制</input>
     </div>
-    <div class="input-group">
-        <input type="text" class="form-control"></div>
-</div>
-<div class="input-group-btn">
-    <button type="button" class="btn btn-primary">转换</button>
-</div>
+    <div style="width:100%;height:20px;"></div>
+    <div class="form-inline">
+        <input type="text" class="form-control margin-20 form-control-inline">
+        <button type="button" class="btn btn-primary margin-10" id="convert">转换</button>
+    </div>
+    <div style="width:100%;height:20px;"></div>
 <div>
-    <table class="table">
-        <thead>
-        <th scope="col">进制</th>
-        <th scope="col">结果</th>
-        <th scope="col">解释</th>
+    <table class="table table-striped ">
+        <thead class="thead-default">
+            <tr>
+                <th>进制</th>
+                <th>结果</th>
+                <th>解释</th>
+            </tr>
         </thead>
         <tbody>
         <tr>
             <th scope="row">2</th>
-            <td><input type="text" class="form-control"/></td>
+            <td><input type="text" class="form-control form-control-inline"/></td>
             <td></td>
         </tr>
         <tr>
             <th scope="row">8</th>
-            <td><input type="text" class="form-control"/></td>
+            <td><input type="text" class="form-control form-control-inline"/></td>
             <td></td>
         </tr>
         <tr>
             <th scope="row">10</th>
-            <td><input type="text" class="form-control"/></td>
+            <td><input type="text" class="form-control form-control-inline"/></td>
             <td></td>
         </tr>
         <tr>
             <th scope="row">16</th>
-            <td><input type="text" class="form-control"/></td>
+            <td><input type="text" class="form-control form-control-inline"/></td>
             <td></td>
         </tr>
         <tr>
             <th scope="row">32</th>
-            <td><input type="text" class="form-control"/></td>
+            <td><input type="text" class="form-control form-control-inline"/></td>
             <td></td>
         </tr>
         </tbody>
